@@ -20,4 +20,14 @@
 </ul>
 <p>Note: These all problems are solved if we use AWS ECS, but we are locked to AWS. If we want to migrate to Azure or other cloud container service provider, then we have to learn about that service.</p>
 
+
+##### What is Kubernetes exactly
+An open-source system(de-facto standard) for orchestrating container deployments. Helps us in below tasks:
+<ul>
+<li>Automatic Deployment</li>
+<li>Scaling and Load Balancing</li>
+<li>Management</li>
+</ul>
+<b>Kubernetes Configuration:</b> <span>Standardized way of describing the to-be-created and to-be-managed resources of Kubernetes Cluster</span></br>
+<b>Kubernetes is like Docker Compose for Multiple Machines</b>
 </i>
