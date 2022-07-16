@@ -73,17 +73,17 @@ IP address</li>
 <th>What You have to Do</th>
 </tr>
 <tr>
-<td></td>
+<td>Create your objects(Pods) and Manage them</td>
 <td>Create the Cluster and the Node instances(Master and Worker Nodes)</td>
+</tr>
 <tr>
-<tr>
-<td></td>
+<td>Monitor Pods, re-create them, Scale Pods</td>
 <td>Setup API server, kubelet and other Kubernetes services/softwares on nodes</td>
+</tr>
 <tr>
-<tr>
-<td></td>
+<td>Kubernetes utilizes the provided resources to apply your configuration/goals</td>
 <td>Create other(cloud) provider resources that might be needed(File Systems and Load Balancers)</td>
-<tr>
+</tr>
 </table>
 
 </i>
