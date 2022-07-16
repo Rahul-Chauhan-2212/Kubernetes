@@ -127,6 +127,6 @@ IP address</li>
 <li>Pod contains shared resources(volumes) for all Pod containers</li>
 <ul>Has a cluster internal IP by default(containers inside a Pod can communicate via localhost)</li>
 </ul>
-<p></b>Pods are designed to be ephemeral: Kubernetes will start, stop and replace them as needed.</b></p>
+<p><b>Pods are designed to be ephemeral: Kubernetes will start, stop and replace them as needed.</b></p>
 <p>For Pods to be managed for you, you need a <b>Controller(i.e Deployment)</b></p>
 </i>
