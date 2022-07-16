@@ -103,7 +103,7 @@ IP address</li>
 <h6>To check status of cluster</h6>
 <h5>minikube status</h5>
 <h6>To open Minikube Browser Dashboard</h6>
-<h5>minikube dashboardr</h5>
+<h5>minikube dashboard</h5>
 
 <p>Kubernetes works with <b>Objects</b></p>
 <h5>Objects</h5>
@@ -114,7 +114,19 @@ IP address</li>
 <li>Volumes</li>
 </ul>
 
-Objects can be created in two ways
-Imperatively
-Declartively
+<h5>Objects can be created in two ways</h5>
+<ul>
+<li>Imperatively</li>
+<li>Declartively</li>
+</ul>
+
+<h6>The "Pod" Object</h6>
+<p>The smallest unit Kubernetes interacts with</p>
+<ul>
+<li>Contains and runs one or multiple containers(mainly one container per pod)</li>
+<li>Pod contains shared resources(volumes) for all Pod containers</li>
+<ul>Has a cluster internal IP by default(containers inside a Pod can communicate via localhost)</li>
+</ul>
+<p></b>Pods are designed to be ephemeral: Kubernetes will start, stop and replace them as needed.</b></p>
+<p>For Pods to be managed for you, you need a <b>Controller(i.e Deployment)</b></p>
 </i>
