@@ -97,4 +97,24 @@ IP address</li>
 <li><a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a></li>
 <li><a href="https://kubernetes.io/docs/tasks/tools/#install-on-windows-using-chocolatey-or-scoop">kubectl</a></li>
 </ul>
+
+<h6>Start Minikube using Docker</h6> 
+<h5>minikube start --driver=docker</h5>
+<h6>To check status of cluster</h6>
+<h5>minikube status</h5>
+<h6>To open Minikube Browser Dashboard</h6>
+<h5>minikube dashboardr</h5>
+
+<p>Kubernetes works with <b>Objects</b></p>
+<h5>Objects</h5>
+<ul>
+<li>Pods</li>
+<li>Deployments</li>
+<li>Service</li>
+<li>Volumes</li>
+</ul>
+
+Objects can be created in two ways
+Imperatively
+Declartively
 </i>
