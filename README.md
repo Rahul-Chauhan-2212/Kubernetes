@@ -87,10 +87,10 @@ IP address</li>
 </table>
 
 <h5>Kubernetes: Required Setup and Installation Steps</h5>
-<ul>
-<li><b><a href="https://kubernetes.io/docs/reference/kubectl/">kubectl</a></b>A command line tool to send instructions to Kubernetes Cluster(Mainly Master Node) using Kubernetes APIs</li>
-<li><b><a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a></b>A local Kubernetes, focusing on making it easy to learn and develop for Kubernetes</li>
-</ul>
+<ol>
+<li><b><a href="https://kubernetes.io/docs/reference/kubectl/">kubectl</a></b> A command line tool to send instructions to Kubernetes Cluster(Mainly Master Node) using Kubernetes APIs</li>
+<li><b><a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a></b> A local Kubernetes, focusing on making it easy to learn and develop for Kubernetes</li>
+</ol>
 
 <ul>
 <b>Installation Steps links</b>
