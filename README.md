@@ -63,4 +63,27 @@ resources (e.g. volumes).</li>
 IP address</li>
 </ul>
 
+
+### Kubernetes in Action : Diving into Core Concepts
+
+<h5> Kubernetes' Work</h5>
+<table>
+<tr>
+<th>What Kubernetes Does</th>
+<th>What You have to Do</th>
+</tr>
+<tr>
+<td></td>
+<td>Create the Cluster and the Node instances(Master and Worker Nodes)</td>
+<tr>
+<tr>
+<td></td>
+<td>Setup API server, kubelet and other Kubernetes services/softwares on nodes</td>
+<tr>
+<tr>
+<td></td>
+<td>Create other(cloud) provider resources that might be needed(File Systems and Load Balancers)</td>
+<tr>
+</table>
+
 </i>
