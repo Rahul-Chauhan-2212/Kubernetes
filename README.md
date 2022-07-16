@@ -23,6 +23,15 @@
 </ul>
 <p>Note: These all problems are solved if we use AWS ECS, but we are locked to AWS. If we want to migrate to Azure or other cloud container service provider, then we have to learn about that service.</p>
 
+##### What Kubernetes is NOT
+
+<ul>
+<li>a cloud provider - a cloud provider service (though cloud provider might offer Kubernetes-specific services)
+</li>
+<li>a tool or service that manages infrastructure - Kubernetes will NOT create and launch anymachines or do anything like that (managed Kubernetes services by cloud providers might dothat)</li>
+<li>a single tool or software - Kubernetes is a collection of concepts and tools</li>
+</ul>
+
 ##### What is Kubernetes exactly
 
 An open-source system(de-facto standard) for orchestrating container deployments. Helps us in below tasks:
