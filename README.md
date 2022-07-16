@@ -86,4 +86,15 @@ IP address</li>
 </tr>
 </table>
 
+<h5>Kubernetes: Required Setup and Installation Steps</h5>
+<ul>
+<li><b><a href="https://kubernetes.io/docs/reference/kubectl/">kubectl</a></b>A command line tool to send instructions to Kubernetes Cluster(Mainly Master Node) using Kubernetes APIs</li>
+<li><b><a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a></b>A local Kubernetes, focusing on making it easy to learn and develop for Kubernetes</li>
+</ul>
+
+<ul>
+<b>Installation Steps links</b>
+<li><a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/tools/#install-on-windows-using-chocolatey-or-scoop">kubectl</a></li>
+</ul>
 </i>
