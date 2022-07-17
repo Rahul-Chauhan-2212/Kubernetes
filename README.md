@@ -121,7 +121,7 @@ IP address</li>
 <li>Declartively</li>
 </ul>
 
-<h6>The "Pod" Object</h6>
+<h5>The "Pod" Object</h5>
 <p>The smallest unit Kubernetes interacts with</p>
 <ul>
 <li>Contains and runs one or multiple containers(mainly one container per pod)</li>
@@ -131,7 +131,7 @@ IP address</li>
 <p><b>Pods are designed to be ephemeral: Kubernetes will start, stop and replace them as needed.</b></p>
 <p>For Pods to be managed for you, you need a <b>Controller(i.e Deployment)</b></p>
 
-<h6>The "Deployment" Object</h6>
+<h5>The "Deployment" Object</h5>
 <p>Controls(Multiple) Pods</p>
 <ul>
 <li>You set a desired state, Kubernetes then changes the actual state
@@ -141,4 +141,34 @@ IP address</li>
 </ul>
 <p><b>Deployments manage a Pod for you, you can also create deployments.</b></p>
 <p><b>You therefore don't directly control the Pods, instead you use deployment to set up the desired end state</b></p>
+
+#### A First Deployment using Imperative approach
+
+Project used ---> <a hrefd="https://github.com/Rahul-Chauhan-2212/Kubernetes/tree/main/kub-action-starting-up"><b>kub-action-starting-up</b></a>
+
+<ul><b>Commands used to create first deployment</b>
+<li>
+<h6>kubectl create deployment name-of-deployment --image=image-name-with-repo-on-dockerhub</h6>
+<p>Used to create deployment on the basis of an image on Docker registry. kubectl create deployment first-app --image=rchauhan9102/kub-first-app</p>
+</li>
+<li>
+<h6>kubectl get deployments</h6>
+<p>Used to get the deployments and their info</p>
+</li>
+<li>
+<h6>kubectl get pods</h6>
+<p>Used to get the pods and their info</p>
+</li>
+<li>
+<h6>kubectl delete deployment name-of-deployment</h6>
+<p>used to delete deployment and in result pods are also deleted. kubectl delete deployment first-app</p>
+</li>
+</ul>
+
+<h6>kubectl: Behind the Scenes</h6>
+<p>
+<b>kubectl create deployment name-of-deployment --image=image-name-with-repo-on-dockerhub</b>
+</br>
+Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently running pods and find the best node(Worker node) for our pod which is free or doing the least work. kubelet manages Pods and Containers.
+</p>
 </i>
