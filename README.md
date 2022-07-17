@@ -63,7 +63,6 @@ resources (e.g. volumes).</li>
 IP address</li>
 </ul>
 
-
 ### Kubernetes in Action : Diving into Core Concepts
 
 <h5> Kubernetes' Work</h5>
@@ -104,6 +103,8 @@ IP address</li>
 <h5>minikube status</h5>
 <h6>To open Minikube Browser Dashboard</h6>
 <h5>minikube dashboard</h5>
+<h6>To delete Minikube cluster</h6>
+<h5>minikube delete</h5>
 
 <p>Kubernetes works with <b>Objects</b></p>
 <h5>Objects</h5>
@@ -125,8 +126,19 @@ IP address</li>
 <ul>
 <li>Contains and runs one or multiple containers(mainly one container per pod)</li>
 <li>Pod contains shared resources(volumes) for all Pod containers</li>
-<ul>Has a cluster internal IP by default(containers inside a Pod can communicate via localhost)</li>
+<li>Has a cluster internal IP by default(containers inside a Pod can communicate via localhost)</li>
 </ul>
 <p><b>Pods are designed to be ephemeral: Kubernetes will start, stop and replace them as needed.</b></p>
 <p>For Pods to be managed for you, you need a <b>Controller(i.e Deployment)</b></p>
+
+<h6>The "Deployment" Object</h6>
+<p>Controls(Multiple) Pods</p>
+<ul>
+<li>You set a desired state, Kubernetes then changes the actual state
+<p>Define which pods and container to run and number of instances</p</li>
+<li>Deployments can be paused, deleted and rolled back</li>
+<li>Deployments can be scaled dynamically(and automatically)</li>
+</ul>
+<p><b>Deployments manage a Pod for you, you can also create deployments.</b></p>
+<p><b>You therefore don't directly control the Pods, instead you use deployment to set up the desired end state</b></p>
 </i>
