@@ -184,4 +184,37 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 </li>
 </ul>
 <p><b>Without services Pods are very hard to reach and communication is difficult</b></p>
+<p><b>Reaching ad Pod from outside of the cluster is not possible at all without services</b></p>
+
+### Exposing a deployment with a service
+
+<ul><b>Commands used to expose deployment with service</b>
+<li>
+<h6>kubectl expose deployment first-app --type=LoadBalancer --port=8080</h6>
+<p>This command exposes the deployment first-app on port 8080 create service with type LoadBalancer to so that we can get a shared IP which can be accessed from outside of the cluster.</p>
+</li>
+<li>
+<h6>kubectl get services</h6>
+<p>used to get the list of services available</p>
+</li>
+<li>
+<h6>minikube service first-app</h6>
+<p>exposes the deployment using the service to the localhost machine. This command is not required if we are running the kubernetes cluster on a Cloud provider</p>
+</li>
+</ul>
+
+<h6>Types of Service Objects</h6>
+<ul>
+<li>ClusterIP
+<p>IP address only available to Kubernetes Cluster</p>
+</li>
+<li>NodePort
+<p>IP address of the Worker node(Machine IP at which Worker node is running)</p>
+</li>
+<li>LoadBalancer
+<p>Shared IP for all the services and available to outside of the cluster</p>
+</li>
+</ul>
+
+
 </i>
