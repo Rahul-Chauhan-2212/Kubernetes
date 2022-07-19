@@ -216,10 +216,26 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 </li>
 </ul>
 
+### Restarting Containers
+
 <p><b>If there is any error in the running container, the Kubernates will restart the container as well as Pod</b></p>
 
 ### Scaling in action
+
 <h6>kubectl scale deployment/first-app --replicas=3</h6>
 <p>create replicas of the first-app pod</p>
+
+### Updating Deployments
+
+<ul>Steps
+<li>Build new image with latest source code and the incrementing tag</li>
+<li>Push the image with new tag to dockerhub</li>
+<li><h5>kubectl set image deployment/first-app kub-first-app=rchauhan9102/kub-first-app:1</h5>
+<p>to update the deployment with newly pushed docker image on dockerhub</p>
+</li>
+<li><h5>kubectl rollout status deployment/first-app</h5>
+<p>to get the rollout status of updated deployment</p>
+</li>
+</ul>
 
 </i>
