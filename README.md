@@ -171,4 +171,17 @@ Project used ---> <a hrefd="https://github.com/Rahul-Chauhan-2212/Kubernetes/tre
 </br>
 Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently running pods and find the best node(Worker node) for our pod which is free or doing the least work. kubelet manages Pods and Containers.
 </p>
+
+<h5>The "Service" Object(Resource)</h5>
+<p>Exposes Pods to the cluster or externally</p>
+<ul>
+<li>Pods have an internal IP address which changes when the Pod is replaced
+<p>Finding Pods is hard if the IP address changes all the time</p>
+</li>
+<li>Service group a Pod with a shared IP address</li>
+<li>Services can allow external access to Pods
+<p>The default(internal only) can be overwritten</p>
+</li>
+</ul>
+<p><b>Without services Pods are very hard to reach and communication is difficult</b></p>
 </i>
