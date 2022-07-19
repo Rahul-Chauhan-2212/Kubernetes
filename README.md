@@ -227,7 +227,7 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 
 ### Updating Deployments
 
-<ul>Steps
+<ul><h5>### Steps</h5>
 <li>Build new image with latest source code and the incrementing tag</li>
 <li>Push the image with new tag to dockerhub</li>
 <li><h5>kubectl set image deployment/first-app kub-first-app=rchauhan9102/kub-first-app:1</h5>
@@ -236,6 +236,26 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 <li><h5>kubectl rollout status deployment/first-app</h5>
 <p>to get the rollout status of updated deployment</p>
 </li>
+</ul>
+<p>To make kubernetes pull the image, there should be change in new image tag</p>
+
+### Deployment Rollbacks and History
+
+<ul>
+<li><h6>kubectl rollout undo deployment/first-app</h6>
+<p>To undo the latest deployment and rolled back to the previous one</p>
+</li>
+<li><h6>kubectl rollout history deployment/first-app</h6>
+<p>To get the history to the deployment</p>
+</li>
+<li><h6>kubectl rollout history deployment/first-app --revision=6</h6>
+<p>To rollback to a specific deployment</p>
+</li>
+</ul>
+
+<ul><h6>Deletion Commands</h6>
+<li>kubectl delete service first-app</li>
+<li>kubectl delete deployment first-app</li>
 </ul>
 
 </i>
