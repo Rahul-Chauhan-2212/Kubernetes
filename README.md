@@ -216,5 +216,10 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 </li>
 </ul>
 
+<p><b>If there is any error in the running container, the Kubernates will restart the container as well as Pod</b></p>
+
+### Scaling in action
+<h6>kubectl scale deployment/first-app --replicas=3</h6>
+<p>create replicas of the first-app pod</p>
 
 </i>
