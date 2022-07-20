@@ -258,4 +258,25 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 <li>kubectl delete deployment first-app</li>
 </ul>
 
+#### The Imperative vs Declarative approach
+
+<table>
+<tr>
+<th>Imperative</th>
+<th>Declartive</th>
+</tr>
+<tr>
+<td>kubectl create deployment ..</td>
+<td>kubectl apply -f config.yaml</td>
+</tr>
+<tr>
+<td>Individual commands are executed to trigger certain kubernetes actions</td>
+<td>A config file is applied and used to change the desired state</td>
+</tr>
+<tr>
+<td>Comparable to using docker run only</td>
+<td>Comparable to using docker compose with compose files</td>
+</tr>
+</table>
+
 </i>
