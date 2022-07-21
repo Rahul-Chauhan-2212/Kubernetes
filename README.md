@@ -279,4 +279,21 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 </tr>
 </table>
 
+### Declarative Deployment
+
+<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/"><b>Reference Doc to create yaml file for Declarative Approach</b></a>
+
+<ul>
+<li><h5>kubectl apply -f=deployment.yaml</h5>
+<p>Used to apply the deployment related changes</p>
+</li>
+<li><h5>kubectl apply -f=service.yaml</h5>
+<p>Used to apply the service related changes</p>
+</li>
+<li><h5>kubectl delete -f=deployment.yaml,service.yaml</h5>
+<p>Used to delete the deployment and services</p>
+</li>
+</ul>
+<p>To update the deployment we just have modify the yaml file and apply those changes</p>
+<p>Labels and Selectors are necessary... Labels are used to make a link between pods and services</p>
 </i>
