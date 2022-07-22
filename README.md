@@ -295,5 +295,7 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 </li>
 </ul>
 <p>To update the deployment we just have modify the yaml file and apply those changes</p>
-<p>Labels and Selectors are necessary... Labels are used to make a link between pods and services</p>
+<p>Labels and Selectors are necessary... Labels and Selectors are used to make a link between pods and services</p>
+
+<p>We can have multiple resources in one single deployment file by adding --- in yaml file. It is better pratice to create service then deployment.</p>
 </i>
