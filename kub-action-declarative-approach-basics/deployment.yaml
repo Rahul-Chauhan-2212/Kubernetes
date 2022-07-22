@@ -25,6 +25,7 @@ spec:
       containers:
         - name: second-node
           image: rchauhan9102/kub-first-app:1
+          imagePullPolicy: Always
           livenessProbe:
             httpGet:
               path: /

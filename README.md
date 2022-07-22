@@ -335,4 +335,13 @@ livenessProbe:</br>
 </b>
 <p>Used to get the health of the running container</p>
 </li>
+
+###### Configuration Options
+
+<ul>
+<li>
+<h5>imagePullPolicy: Always</ul>
+<p>Force kubernetes to pull the image always during update in deployment</p>
+</li>
+</ul>
 </i>
