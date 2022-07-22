@@ -297,5 +297,27 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 <p>To update the deployment we just have modify the yaml file and apply those changes</p>
 <p>Labels and Selectors are necessary... Labels and Selectors are used to make a link between pods and services</p>
 
-<p>We can have multiple resources in one single deployment file by adding --- in yaml file. It is better pratice to create service then deployment.</p>
+<p>We can have multiple resources in one single deployment file by adding --- in yaml file. It is better pratice to create service before deployment.</p>
+
+###### More on Labels and Selectors
+
+<ul>
+<li>
+<p>
+<b>
+# matchExpressions:
+    #   - key: app
+    #     operator: In
+    #     values:
+    #       - second-app
+    #       - first-app
+</b>
+We can use matchExpressions in place of matchLabels to select on the basic of key value pair and operator.
+</p>
+</li>
+<li>
+<h6>kubectl delete -l labelKey=labelValue deployments,services</h6>
+<p>Used to delete the resoures on the basis label key value defined in applied config file</p>
+</li>
+</ul>
 </i>
