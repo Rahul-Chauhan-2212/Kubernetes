@@ -305,12 +305,12 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 <li>
 <p>
 <b>
-# matchExpressions:
-    #   - key: app
-    #     operator: In
-    #     values:
-    #       - second-app
-    #       - first-app
+matchExpressions:</br>
+  - key: app</br>
+    operator: In</br>
+    values:</br>
+      - second-app</br>
+      - first-app
 </b>
 We can use matchExpressions in place of matchLabels to select on the basic of key value pair and operator.
 </p>
@@ -320,4 +320,19 @@ We can use matchExpressions in place of matchLabels to select on the basic of ke
 <p>Used to delete the resoures on the basis label key value defined in applied config file</p>
 </li>
 </ul>
+
+###### Liveness Probes
+
+<ul>
+<li>
+<b>
+livenessProbe:</br>
+  httpGet:</br>
+    path: /</br>
+    port: 8080</br>
+  periodSeconds: 10</br>
+  initialDelaySeconds: 5
+</b>
+<p>Used to get the health of the running container</p>
+</li>
 </i>
