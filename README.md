@@ -360,4 +360,42 @@ livenessProbe:</br>
 </li>
 </ul>
 
+#### Kubernetes and Volumes
+
+<ul>Kubernetes can mount volumes into containers
+<li>A broad variety of volumes/driver types are supported
+<ol>
+<li>Local Volumes(i.e. On Nodes)</li>
+<li>Cloud provider specific volumes</li>
+</ol>
+</li>
+<li>Volume lifetime depends on the Pod lifetime
+<ol>
+<li>Volume survives containers re-starts(and removal)</li>
+<li>Volumes are deleted if the Pods are destroyed</li>
+</ol>
+</li>
+
+#### Kubernetes Volumes vs Docker Volumes
+
+<table>
+<tr>
+<th>Kubernetes Volumes</th>
+<th>Docker Volumes</th>
+</tr>
+<tr>
+<td>Supports many different drivers and Types</td>
+<td>Basically no driver/type support</td>
+</tr>
+<tr>
+<td>Volumes are not necessarily persistent</td>
+<td>Volumes persists until manually cleared</td>
+</tr>
+<tr>
+<td>Volumes survives container restarts and removal</td>
+<td>Volumes survives container restarts and removal</td>
+</tr>
+</table>
+</ul>
+
 </i>
