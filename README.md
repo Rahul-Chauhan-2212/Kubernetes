@@ -263,7 +263,7 @@ Commands goes to Master Node(Control Plane) ---> Scheduler analyses currently ru
 <table>
 <tr>
 <th>Imperative</th>
-<th>Declartive</th>
+<th>Declarative</th>
 </tr>
 <tr>
 <td>kubectl create deployment ..</td>
@@ -344,4 +344,20 @@ livenessProbe:</br>
 <p>Force kubernetes to pull the image always during update in deployment</p>
 </li>
 </ul>
+
+### Managing Data and Volumes with Kubernetes
+
+<ul>
+<h5>State</h5>
+<p>State is data created and used by your application which should not be lost</p>
+<li>
+<h6>User-generated data, user-accounts</h6>
+<p>Often stored in databases but can also be file(e.g. Upload files)</p>
+</li>
+<li>
+<h6>Intermediate results derived by the app</h6>
+<p>Often stored in memory, temporary database tables or files</p>
+</li>
+</ul>
+
 </i>
