@@ -398,4 +398,8 @@ livenessProbe:</br>
 </table>
 </ul>
 
+##### Getting started with Kubernetes Volumes
+
+<b><a href="https://kubernetes.io/docs/concepts/storage/volumes/">Kubernetes Volumes Documentation</a></b>
+
 </i>
