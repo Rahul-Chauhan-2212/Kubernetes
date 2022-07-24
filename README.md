@@ -404,7 +404,10 @@ livenessProbe:</br>
 
 <ul>Some Common Kubernetes volume types
 <li><h5>emptyDir</h5>
-<p>Creates an empty directory and is linked with a container path so content can be written and saved at the newly created empty directly in Worker Node</p>
+<p>Creates an empty directory and is linked with a container path so content can be written and saved at the newly created empty directly in Worker Node. It is not suitable for multiple replicas.</p>
+</li>
+<li><h5>hostPath</h5>
+<p>Used for Multiple Replicas. It stores data in host machine(Worker Node) and available for all replicas.</p>
 </li>
 </ul>
 
