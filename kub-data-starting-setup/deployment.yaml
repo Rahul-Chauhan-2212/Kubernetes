@@ -14,7 +14,13 @@ spec:
     spec:
       containers:
         - name: story
-          image: rchauhan9102/story:1
+          image: rchauhan9102/story:2
+          volumeMounts:
+            - mountPath: /app/story
+              name: story-volume
+      volumes:
+        - name: story-volume
+          emptyDir: {}
 
 
     

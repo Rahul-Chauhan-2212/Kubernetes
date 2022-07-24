@@ -402,4 +402,10 @@ livenessProbe:</br>
 
 <b><a href="https://kubernetes.io/docs/concepts/storage/volumes/">Kubernetes Volumes Documentation</a></b>
 
+<ul>Some Common Kubernetes volume types
+<li><h5>emptyDir</h5>
+<p>Creates an empty directory and is linked with a container path so content can be written and saved at the newly created empty directly in Worker Node</p>
+</li>
+</ul>
+
 </i>
