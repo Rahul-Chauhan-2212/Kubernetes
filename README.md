@@ -409,6 +409,9 @@ livenessProbe:</br>
 <li><h5>hostPath</h5>
 <p>Used for Multiple Replicas. It stores data in host machine(Worker Node) and available for all replicas.</p>
 </li>
+<li><h5>csi (Container Storage Interface)</h5>
+<p>Used for any outside file system which is very flexible. You just need integration driver available for that file system.</p>
+</li>
 </ul>
 
 </i>
