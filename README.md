@@ -423,6 +423,30 @@ livenessProbe:</br>
 
 <b><a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/">Persistent Volumes</a></b>
 
+<h5>"Normal" Volumes vs Persistent Volumes</h5>
+<table>
+<tr>
+<th>"Normal" Volumes</th>
+<th>Persistent Volumes</th>
+</tr>
+<tr>
+<td>Allows to persist Data</td>
+<td>Allows to persist Data</td>
+</tr>
+<tr>
+<td>Volume is attached to Pod and Pod Lifecycle</td>
+<td>Volume is a Standalone Cluster Resource(Not attached to a Pod)</td>
+</tr>
+<tr>
+<td>Defined and Created together with Pod</td>
+<td>Created standalone and claimed via PVC</td>
+</tr>
+<tr>
+<td>Repetitive and hard to administer on a global level</td>
+<td>Can be defined once and used multiple times</td>
+</tr>
+<table>
+
 <ul><h5>Steps to create Persitent Volumes</h5>
 <li>Define a Persistent Volume</li>
 <li>Define a Persistent Volume Claim</li>
@@ -455,5 +479,7 @@ livenessProbe:</br>
 <p>To update the deployment</p>
 </li>
 </ul>
+
+##### Environment Variables
 
 </i>
