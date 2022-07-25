@@ -414,4 +414,13 @@ livenessProbe:</br>
 </li>
 </ul>
 
+##### Persistent Volumes
+
+<p>Volumes are destroyed when a Pod is removed.
+<b>hostPath partially work around that is one-node environments like minikube</b>
+</p>
+<h5>Pod- and Node-dependent volumes are sometimes required.--->Persitsent Volumes</h5>
+
+<b><a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/">Persistent Volumes</a></b>
+
 </i>
