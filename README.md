@@ -423,4 +423,9 @@ livenessProbe:</br>
 
 <b><a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/">Persistent Volumes</a></b>
 
+<ul><h5>Steps to create Persitent Volumes</h5>
+<li>Define a Persistent Volume</li>
+<li>Define a Persistent Volume Claim</li>
+</ul>
+
 </i>
