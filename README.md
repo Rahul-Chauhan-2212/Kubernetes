@@ -426,6 +426,34 @@ livenessProbe:</br>
 <ul><h5>Steps to create Persitent Volumes</h5>
 <li>Define a Persistent Volume</li>
 <li>Define a Persistent Volume Claim</li>
+<li>Using a Claim in Pod</li>
+</ul>
+
+<ul><b>Commands for Persistent Volume Deployment</b>
+<li>
+<h5>kubectl get sc</h5>
+<p>To get the Storage Classes</p>
+</li>
+<li>
+<h5>kubectl apply -f="host-pv.yaml"</h5>
+<p>To apply Persistent Volume Config</p>
+</li>
+<li>
+<h5>kubectl get pv</h5>
+<p>To get the List of Persistent Volumes</p>
+</li>
+<li>
+<h5>kubectl apply -f="host-pvc.yaml"</h5>
+<p>To apply Persistent Volume Claim</p>
+</li>
+<li>
+<h5>kubectl get pvc</h5>
+<p>To get the List of Persistent Volume Claims</p>
+</li>
+<li>
+<h5>kubectl apply -f="deployment.yaml"</h5>
+<p>To update the deployment</p>
+</li>
 </ul>
 
 </i>
