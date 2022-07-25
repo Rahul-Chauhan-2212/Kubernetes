@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: PersistentVolume
+metadata:
+  name: host-pv
+spec:
+  capacity:
+    storage: 1Gi
+  volumeMode: FilesSystem
+  accessed: 
+    - ReadWriteOnce
+  hostPath:
+    path: /data/
+    type: DirectoryOrCreate
