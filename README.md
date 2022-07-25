@@ -482,4 +482,17 @@ livenessProbe:</br>
 
 ##### Environment Variables
 
+<p>We can set using env tag at containers tag in deployment.yaml</p>
+
+<ul>
+<li>
+<h5>kubectl apply -f="environment.yaml"</h5>
+<p>To Apply config Map</p>
+</li>
+<li>
+<h5>kubectl get configmap</h5>
+<p>To get Config Map</p>
+</li>
+</ul>
+
 </i>
