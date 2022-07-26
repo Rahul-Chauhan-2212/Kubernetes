@@ -17,6 +17,6 @@ spec:
         image: rchauhan9102/kub-demo-users:1
         env:
           - name: AUTH_ADDRESS
-            value: localhost
+            value: "10.110.69.89" #ClusterIP
       # - name: auth
       #   image: rchauhan9102/kub-demo-auth:1
