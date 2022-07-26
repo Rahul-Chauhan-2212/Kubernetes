@@ -1,6 +1,7 @@
 # Kubernetes
 
 ### Kubernetes Introduction
+
 <i>
 <a href="https://kubernetes.io/">Kubernetes</a>
 <h5>Independent Container Orchestration</h5>
@@ -507,5 +508,7 @@ livenessProbe:</br>
 <hr>
 
 ### Kubernetes Networking
+
+<p>For Pod internal Communication(Same Pod Container), we can user <b>localhost</b> as the address for the second container.</p>
 
 </i>
