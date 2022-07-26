@@ -14,6 +14,9 @@ spec:
     spec:
       containers:
       - name: users
-        image: rchauhan9102/kub-demo-users:latest
+        image: rchauhan9102/kub-demo-users:1
+        env:
+          - name: AUTH_ADDRESS
+            value: localhost
       - name: auth
-        image: rchauhan9102/kub-demo-auth:latest
+        image: rchauhan9102/kub-demo-auth:1
