@@ -17,6 +17,7 @@ spec:
         image: rchauhan9102/kub-demo-users:1
         env:
           - name: AUTH_ADDRESS
-            value: "10.110.69.89" #ClusterIP
+            # value: "10.110.69.89" #ClusterIP
+            value: "auth-service.default" #Service name.namespace
       # - name: auth
       #   image: rchauhan9102/kub-demo-auth:1
