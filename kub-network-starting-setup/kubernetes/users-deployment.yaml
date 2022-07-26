@@ -14,4 +14,6 @@ spec:
     spec:
       containers:
       - name: users
-        image: rchauhan9102/kub-demo-users:1
+        image: rchauhan9102/kub-demo-users:latest
+      - name: auth
+        image: rchauhan9102/kub-demo-auth:latest
