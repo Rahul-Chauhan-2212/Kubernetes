@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasks-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tasks
+  template:
+    metadata:
+      labels:
+        app: tasks
+    spec:
+      containers:
+      - name: tasks
+        image: rchauhan9102/kub-demo-tasks:latest
+        env:
+          - name: AUTH_ADDRESS
+            # value: "10.110.69.89" #ClusterIP
+            value: "auth-service.default" #Service name.namespace
+      # - name: auth
+      #   image: rchauhan9102/kub-demo-auth:1
+          - name : TASKS_FOLDER
+            value: tasks
+        volumeMounts:
+            - mountPath: /app/tasks
+              name: tasks-volume
+      volumes:
+        - name: tasks-volume
+          hostPath:
+            path: /data/
+            type: DirectoryOrCreate

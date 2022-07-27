@@ -520,11 +520,13 @@ livenessProbe:</br>
 </li>
 <li><h5>Using DNS</h5>
 <a href="https://coredns.io/">Core DNS - Domain Name Service</a>
-<p>We can use servicename.namespace too for Pod to Pod communication</p>
+<p>We can use <b>servicename.namespace</b> too for Pod to Pod communication</p>
 <b>kubectl get namespaces</b>
 <p>To get the namespaces</p>
 </li>
 </ol>
 </li>
 </ul>
+<h5>kubectl logs -f podId</h5>
+<p>To get the logs of the Pods</p>
 </i>
