@@ -529,4 +529,23 @@ livenessProbe:</br>
 </ul>
 <h5>kubectl logs -f podId</h5>
 <p>To get the logs of the Pods</p>
+
+<hr>
+
+### Kubernetes Deployment(AWS EKS)
+
+#### Deployment Options and Steps
+
+<ul>
+<li><h5>Custom Data Center</h5>
+<p>You need to install and configure everything(i.e. Machines and Kubernetes Software)</p>
+</li>
+<li><h5>Cloud Provider</h5>
+<ol>
+<li>You do all the installation and configuration on your own(Manually or via Kops)</li>
+<li>Managed Service(Just need to define cluster architecture) i.e. AWS EKS</li>
+</ol>
+</li>
+</ul>
+
 </i>
