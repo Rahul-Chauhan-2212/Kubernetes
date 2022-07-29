@@ -548,4 +548,40 @@ livenessProbe:</br>
 </li>
 </ul>
 
+##### Steps to create EKS Cluster and Deploy Apps on it
+
+<ul>
+<li>
+<h4>Create EKS Cluster</h4>
+<ol>
+<li>Configure Cluster</li>
+<li>Create EKS role for EKS Cluster</li>
+<li>Create VPC using Cloud Formation Stack Creation</li>
+</ol>
+</li>
+
+<li>
+<h4>Update Kubectl Config</h4>
+<h5>{UserHome}/.kube/config</h5>
+<p>This file is used to by kubectl to connect with minikube
+We need to override this file.
+This we can user AWS CLI. We need to download and install it so that we can communicate with the AWS Cluster from our local machine.
+For that we need to create Access Key from IAM.
+</p>
+<ol>
+<li>
+<h5>aws configure</h5>
+<ol>
+<li>enter access key</li>
+<li>enter access secret key</li>
+<li>enter default region</li>
+</ol>
+</li>
+<li>
+<h5>aws eks --region regionName update-kubeconfig --name clusterName</h5>
+<p>This will update local kubectl config file to connect to AWS Cluster</p>
+</li>
+</ol>
+</li>
+</ul>
 </i>
