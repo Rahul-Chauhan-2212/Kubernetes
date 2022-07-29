@@ -583,5 +583,18 @@ For that we need to create Access Key from IAM.
 </li>
 </ol>
 </li>
+<li>
+<h4>Adding Worker Nodes</h4>
+<ol>
+On Cluster-->Compute
+<h5>Create Node Group</h5>
+<li>
+<h6>Create EC2 Node Role</h6>
+Add Permissions AmazonEKSWorkerNodePolicy, AmazonEKS_CNI_Policy, AmazonEC2ContainerRegistryReadOnly
+</li>
+<li>Set Compute and Scaling Configurations</li>
+<li>Specify Networking</li>
+<ol>
+</li>
 </ul>
 </i>
