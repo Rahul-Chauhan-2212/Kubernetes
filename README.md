@@ -594,7 +594,13 @@ Add Permissions AmazonEKSWorkerNodePolicy, AmazonEKS_CNI_Policy, AmazonEC2Contai
 </li>
 <li>Set Compute and Scaling Configurations</li>
 <li>Specify Networking</li>
-<ol>
+</ol>
+</li>
+<li>
+<h4>Applying Kubernetes Config</h4>
+Simply run the kubectl apply to apply the configs.</br>
+AWS automatically create a Load Balancer in EC2 if the service is of type Load Balancer</br>
+for Load Balancer type service we will get an AWS url using which we can access our app.
 </li>
 </ul>
 </i>
