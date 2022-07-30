@@ -602,5 +602,14 @@ Simply run the kubectl apply to apply the configs.</br>
 AWS automatically create a Load Balancer in EC2 if the service is of type Load Balancer</br>
 for Load Balancer type service we will get an AWS url using which we can access our app.
 </li>
+<li>
+<h4>Adding Volumes to EKS</h4>
+<ol>
+<h5>Adding EFS as a Volume(with CSI Volume Type)</h5>
+<li><a href="kubectl apply -k "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.3"">Install AWS EFS CSI Driver into Cluster using deploy command on this page</a></li>
+<li>Create Security Group for EFS using VPC being used for EKS. Set the Inboud/outbound rules.</li>
+<li>Create EFS using EKS VPC.</li>
+</ol>
+</li>
 </ul>
 </i>
