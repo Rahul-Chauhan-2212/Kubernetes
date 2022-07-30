@@ -609,6 +609,10 @@ for Load Balancer type service we will get an AWS url using which we can access 
 <li><a href="kubectl apply -k "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.3"">Install AWS EFS CSI Driver into Cluster using deploy command on this page</a></li>
 <li>Create Security Group for EFS using VPC being used for EKS. Set the Inboud/outbound rules.</li>
 <li>Create EFS using EKS VPC.</li>
+<li>Create Persistence Volume and Claim for EFS</br>
+<h6>kubectl get sc</h6>
+<p>To get the storage Classes</p>
+</li>
 </ol>
 </li>
 </ul>

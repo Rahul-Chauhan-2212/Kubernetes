@@ -1,3 +1,38 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: efs-sc
+provisioner: efs.csi.aws.com
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: efs-pv
+spec:
+  capacity:
+    storage: 5Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: efs-sc
+  csi:
+    driver: efs.csi.aws.com
+    volumeHandle: fileSystemIDofAWSEFS
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-pvc
+spec:
+  resources:
+    requests:
+      storage: 5Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  storageClassName: efs-sc
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -33,3 +68,10 @@ spec:
               value: 'mongodb cluster connection uri'
             - name: AUTH_API_ADDRESSS
               value: 'auth-service.default:3000'
+          volumeMounts:
+            - name: efs-vol
+              mountPath: /app/users
+      volumes:
+        - name: efs-vol
+          persistenVolumeClaim:
+            claimName: efs-pvc
