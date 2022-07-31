@@ -11,5 +11,12 @@ services:
     ports:
       - '8080:3000'
     environment:
-      MONGODB_CONNECTION_URI: 'mongodb cluster connection uri'
-      AUTH_API_ADDRESSS: 'auth:3000'
+      MONGODB_CONNECTION_URI: 'Mongo DB Cluster Connection URL'
+      AUTH_API_ADDRESS: 'auth:3000'
+  tasks:
+    build: ./tasks-api
+    ports:
+      - '3000:3000'
+    environment:
+      MONGODB_CONNECTION_URI: 'Mongo DB Cluster Connection URL'
+      AUTH_API_ADDRESS: 'auth:3000'
