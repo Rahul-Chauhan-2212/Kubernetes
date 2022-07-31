@@ -615,5 +615,8 @@ for Load Balancer type service we will get an AWS url using which we can access 
 </li>
 </ol>
 </li>
+<li>
+<h4>Use the EFS Volume</h4>
+</li>
 </ul>
 </i>

@@ -66,7 +66,7 @@ spec:
           env:
             - name: MONGODB_CONNECTION_URI
               value: 'mongodb cluster connection uri'
-            - name: AUTH_API_ADDRESSS
+            - name: AUTH_API_ADDRESS
               value: 'auth-service.default:3000'
           volumeMounts:
             - name: efs-vol
